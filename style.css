@@ -1,4 +1,6 @@
-font-family: "Jua", sans-serif;
-font-family: "Noto Sans KR", sans-serif;
-font-family: "Open Sans", sans-serif;
-font-family: "Roboto", sans-serif;
+div {
+  font-family: "Jua", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
