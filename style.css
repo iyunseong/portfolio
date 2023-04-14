@@ -342,7 +342,8 @@ p {
   transition: all var(--animation-duration) 300ms ease-in;
 }
 
-.category__btn:hover .category__count {
+.category__btn:hover .category__count,
+.category__count.active {
   opacity: 1;
   top: 0;
 }
@@ -362,6 +363,10 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.project.invisible {
+  display: none;
 }
 
 .project__img {
@@ -474,6 +479,28 @@ p {
 .contact__links i:hover {
   transform: scale(1.1);
   color: var(--color-dark-grey);
+}
+
+.arrow-up {
+  position: fixed;
+  background-color: darkblue;
+  color: var(--color-white);
+  font-size: 32px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  top: 90%;
+  left: 90%;
+  opacity: 0;
+  transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.arrow-up.visible {
+  pointer-events: auto;
 }
 
 /* For below 768px screen width */
