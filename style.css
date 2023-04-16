@@ -109,7 +109,6 @@ p {
 
 #navbar.navbar--dark {
   background-color: darkblue;
-  padding: 8px;
 }
 
 .navbar__logo {
@@ -400,7 +399,7 @@ p {
 }
 
 .project__description h3 {
-  color: var(--color-white);
+  color: var(--color-orange);
 }
 
 .project__description h3:after {
@@ -517,6 +516,7 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: darkblue;
   }
 
   .navbar__menu {
@@ -526,12 +526,20 @@ p {
     display: none;
   }
 
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar__menu.open {
+    display: block;
+  }
+
   .about__majors {
     flex-direction: column;
   }
 
   .major {
-    margin-bottom: 38px;
+    margin-bottom: 24px;
   }
 
   .skillset {
